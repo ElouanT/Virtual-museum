@@ -1,0 +1,45 @@
+.header2{
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 50px;
+    background-color: #2D3333;
+    margin-bottom: 40px;
+}
+
+a {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h2 {
+    margin: auto;
+    width: fit-content;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 40px;
+    color: #0D0D0D;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    min-height: 600px;
+    margin: 40px auto;
+    column-gap: 30px;
+}
+
+img {
+    object-fit: cover;
+    width: 500px;
+    height: auto;
+    max-height: 600px;
+}
+
+p {
+    margin-top: 20px;
+    width: fit-content;
+    font-family: "Goudy Bookletter 1911", sans-serif;
+    font-size: 18px;
+    color: #0D0D0D;
+}
