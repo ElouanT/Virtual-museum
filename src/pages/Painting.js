@@ -23,7 +23,10 @@ const Painting = () => {
                 
                 <h2>{data.title}</h2>
                 <div className='flex'>
-                    <img src={"https://www.artic.edu/iiif/2/"+data.image_id+"/full/843,/0/default.jpg"}/>
+                    <div>
+                        <img src={"https://www.artic.edu/iiif/2/"+data.image_id+"/full/843,/0/default.jpg"}/>
+                        <p>{ data.artist_display}</p>
+                    </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
                 <div className="footer">

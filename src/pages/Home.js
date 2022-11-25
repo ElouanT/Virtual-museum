@@ -10,7 +10,7 @@ const Home = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("https://api.artic.edu/api/v1/artworks?fields=id,title,image_id,artist_title")
+        fetch("https://api.artic.edu/api/v1/artworks?fields=id,title,image_id,artist_title?page=1&limit=24")
         .then((res) => res.json())
         .then((res) => setData(res.data));
     }, [])

@@ -38,6 +38,8 @@ img {
 
 p {
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     width: fit-content;
     font-family: "Goudy Bookletter 1911", sans-serif;
     font-size: 18px;
