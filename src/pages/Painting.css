@@ -45,3 +45,10 @@ p {
     font-size: 18px;
     color: #0D0D0D;
 }
+
+.loading {
+    display: block;
+    margin: auto;
+    height: 600px;
+    padding-top: 200px;
+}
