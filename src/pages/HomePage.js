@@ -1,12 +1,10 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from "react-router-dom";
-import { Card, Spin } from 'antd';
+import { Spin } from 'antd';
+import PaintingCard from '../components/PaintingCard';
 import 'antd/dist/antd.css';
 import './Home.css';
 
-const { Meta } = Card;
-
-const Home = () => {
+function HomePage() {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -23,12 +21,6 @@ const Home = () => {
         }
     }, [data])
 
-    let navigate = useNavigate(); 
-    const routeChange = (id) =>{ 
-        let path = `painting?id=` + id; 
-        navigate(path);
-    }
-
     return (
         <div>
             <div className="header">
@@ -44,12 +36,7 @@ const Home = () => {
             { !loading &&
                 <div className="images">
                     {data.map((painting) => (
-                        <Card key={painting.id} style={{width: 300, height: 500 }} onClick={()=>routeChange(painting.id)} hoverable
-                        cover={
-                            <img src={"https://www.artic.edu/iiif/2/"+painting.image_id+"/full/843,/0/default.jpg"} style={{width: 300, height: "auto"}}/>
-                        }>
-                            <Meta title={painting.title} description={painting.artist_title} />
-                        </Card>
+                        <PaintingCard id={painting.id} imageId={painting.image_id} title={painting.title} description={painting.description}/>
                     ))}
                 </div>
             }
@@ -61,4 +48,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default HomePage;

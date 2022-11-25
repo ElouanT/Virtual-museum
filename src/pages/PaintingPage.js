@@ -4,7 +4,7 @@ import { Spin } from 'antd';
 import 'antd/dist/antd.css';
 import './Painting.css';
 
-const Painting = () => {
+function PaintingPage () {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(true);
 
@@ -65,4 +65,4 @@ const Painting = () => {
     )
 }
 
-export default Painting;
+export default PaintingPage;

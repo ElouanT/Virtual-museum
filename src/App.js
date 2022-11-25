@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Painting from "./pages/Painting";
+import HomePage from './pages/HomePage';
+import PaintingPage from './pages/PaintingPage';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/painting" element={<Painting/>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/painting" element={<PaintingPage/>} />
       </Routes>
     </BrowserRouter>
   );
