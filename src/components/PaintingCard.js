@@ -7,7 +7,6 @@ const PaintingCard = (props) => {
     const { Meta } = Card;
 
     const favorites = useSelector((state) => state.favorites.value);
-    const dispatch = useDispatch();
     
     let navigate = useNavigate(); 
     const routeChange = (id) =>{ 
