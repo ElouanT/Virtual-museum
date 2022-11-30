@@ -17,7 +17,7 @@ const PaintingCard = (props) => {
     return (
         <Card key={props.id} style={{width: 300, height: 500 }} onClick={()=>routeChange(props.id)} hoverable
         cover={
-            <img src={"https://www.artic.edu/iiif/2/"+props.imageId+"/full/843,/0/default.jpg"} style={{width: 300, height: "auto"}}/>
+            <img src={"https://www.artic.edu/iiif/2/"+props.imageId+"/full/843,/0/default.jpg"} style={{width: 300, height: 400}}/>
         }>
             { (favorites.includes(parseInt(props.id))) &&
                 <img className="favorite" src={require('../assets/images/star.png')} style={{width: 25, height: 25}} />
