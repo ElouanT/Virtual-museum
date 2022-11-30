@@ -2,7 +2,6 @@ import { Card } from 'antd';
 import { useNavigate } from "react-router-dom";
 
 import { useSelector, useDispatch } from 'react-redux'
-import favorites, { isFavorite } from '../features/favorites';
 
 const PaintingCard = (props) => {
     const { Meta } = Card;
