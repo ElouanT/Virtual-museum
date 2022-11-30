@@ -36,7 +36,7 @@ function HomePage() {
             { !loading &&
                 <div className="images">
                     {data.map((painting) => (
-                        <PaintingCard id={painting.id} imageId={painting.image_id} title={painting.title} description={painting.description}/>
+                        <PaintingCard key={painting.id} id={painting.id} imageId={painting.image_id} title={painting.title} description={painting.description}/>
                     ))}
                 </div>
             }
